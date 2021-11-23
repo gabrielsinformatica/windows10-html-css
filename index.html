@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 10</title>
+    <script src="https://kit.fontawesome.com/29ee0bc57e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/png">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Noto Sans", Arial, sans-serif;
+            background-image: url(imagens/desktop.jpg);
+            background-repeat: no-repeat;
+        }
+
+        #taskbar {
+            background-color: #020202;
+            color: white;
+            margin-top: 32.32%;
+            display: flex;
+        }
+
+        .windows > i {
+            margin-top: 13px;
+            margin-bottom: 0px;
+            margin-left: 15px;
+            font-size: 20px;
+        }
+
+        .windows > i:hover {
+            color: lightskyblue;
+        }
+
+        .search > input.pesquisa {
+            background-color: white;
+            color: black;
+            width: 335px;
+            height: 40px;
+            margin-left: 15px;
+            font-size: 16px;
+            font-family: "Noto Sans", Arial, sans-serif;
+            padding-left: 30px;
+        }
+
+        .cortana > i, .tasks > i { 
+            margin: 13px 18px;
+        }
+
+        .edge, .pasta, .email {
+            margin: 13px;
+            font-size: 20px;
+        }
+
+        .right-info {
+            margin-left: 360px;
+            display: flex;
+        }
+
+        .seta, .escudo, .bateria, .volume, .wifi, .vol, .notify {
+            margin: 13px;
+            font-size: 15px;
+        }
+
+        div.hora > span {
+            margin: 5px;
+            font-size: 11px;
+            text-align: center;
+            display: block;
+        }
+
+        #desktop {
+            margin: 10px;
+            display: block;
+        }
+
+        .icons-description {
+            margin: 30px 0px;
+            text-align: justify;
+        }
+
+        .icons-description > i.lixeira {
+            font-size: 30px;
+            margin-left: 10px;
+            display: block;
+            color: white;
+        }
+
+        .icons-description > i.edge {
+            font-size: 30px;
+            margin-left: 10px;
+            display: block;
+            color: white;
+        }
+
+        .icons-description > i.computer {
+            font-size: 30px;
+            margin-left: 10px;
+            display: block;
+            color: white;
+        }
+
+        .icons-description > span {
+            margin: 0px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="desktop">
+            <div class="icons-description">
+                <i class="fas fa-trash lixeira"></i>
+                <span>Lixeira</span>
+            </div>
+
+            <div class="icons-description">
+                <i class="fas fa-desktop computer"></i>
+                <span>Este <br> computador</span>
+            </div>
+
+            <div class="icons-description">
+                <i class="fab fa-edge edge"></i>
+                <span>Microsoft Edge</span>
+            </div>
+    </section>
+
+    <section id="taskbar">
+        <div class="windows">
+            <i class="fab fa-windows" title="Iniciar"></i>
+        </div>
+        <form method="GET">
+            <div class="search">
+                <input type="text" name="pesquisa" class="pesquisa" placeholder="Digite aqui para pesquisar">
+            </div>
+        </form>
+        <div class="cortana">
+            <i class="far fa-circle"></i>
+        </div>
+        <div class="tasks">
+            <i class="fas fa-columns"></i>
+        </div>
+        <div class="apps">
+            <i class="fab fa-edge edge"></i>
+            <i class="fas fa-folder pasta"></i>
+            <i class="fas fa-envelope-open email"></i>
+        </div>
+        <div class="right-info">
+            <i class="fas fa-long-arrow-alt-up seta"></i>
+            <i class="fas fa-shield-alt escudo"></i>
+            <i class="fas fa-battery-full bateria"></i>
+            <i class="fas fa-wifi wifi"></i>
+            <i class="fas fa-volume-up volume"></i>
+            <div class="hora">
+                <span>12:00</span>
+                <span>01/01/2022</span>
+            </div>
+            <i class="fas fa-comment-alt notify"></i>
+        </div>
+    </section>
+    
+</body>
+</html>
